@@ -2,7 +2,7 @@ import './style.css';
 import React from 'react';
 import { Field } from 'react-final-form';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
-
+import Counter from '../counters';
 function Form(props) {
     return (
         <BrowserRouter>
@@ -19,7 +19,7 @@ function Form(props) {
                         <Link className="link" to="/editForm">
                             <button className="buttons">Edit</button>
                         </Link>
-                        <Link className="link" to="/Counter">
+                        <Link className="link" to="/Counters">
                             <button className="buttons">Counters</button>
                         </Link>
                     </div>
@@ -38,12 +38,13 @@ function Form(props) {
                         <Link className="link" to="/home">
                             <button className="buttons" onClick={props.handleInputChange} >Save</button>
                         </Link>
-                        <Link className="link" to="/Counter">
+                        <Link className="link" to="/Counters">
                             <button className="buttons">Counters</button>
                         </Link>
                     </div>
                 </form>
             </Route>
+            <Route exact path="/Counters" component={Counter}></Route>
         </BrowserRouter>
     )
 };

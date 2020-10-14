@@ -4,10 +4,9 @@
     flex-direction:column;
     font-weight: bold;
     font-family: "Montserrat";
+    width: 200px;
+    height: 300px;
     margin: 10px;
-}
-
-h1{
     color: #693668;
 }
 
@@ -25,7 +24,6 @@ h1{
     padding: 10px;
     font-family: "Montserrat", sans-serif;
     transition: all 0.3s;
-    color: #693668;
     border-bottom: 2px solid #bebed2;
 }
 
@@ -42,19 +40,16 @@ h1{
 }
 
 .link{
-    display: flex;
     text-decoration: none;
     width: 50%;
 }
 
-.buttons{
-    display: flex;
-    align-content: flex-end;
+button{
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    font-size: 1.1rem;
-    width: 90%;
+    font-size: 1rem;
     padding: 5px 10px 5px 10px;
+    margin: 5px;
     background: none;
     cursor: pointer;
     transition: all 0.3s;
@@ -62,10 +57,15 @@ h1{
     color: #5a5a6e;
 }
 
-.buttons:hover{
+button:hover{
     cursor:pointer;
     transition: all 0.3s;
     background: #77FC2994;
     border: 2px solid #77FC2994;
     color: #693668;
+}
+
+button.buttons{
+    width: 90%;
+    margin: 5px;
 }
