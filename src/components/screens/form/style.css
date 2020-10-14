@@ -1,0 +1,71 @@
+.form{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    font-weight: bold;
+    font-family: "Montserrat";
+    margin: 10px;
+}
+
+h1{
+    color: #693668;
+}
+
+.textBox{
+    display: flex;
+    flex: column;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    font-size: 1rem;
+    border: 0;
+    margin: 5px 0;
+    width: 100%;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s;
+    color: #693668;
+    border-bottom: 2px solid #bebed2;
+}
+
+.textBox:focus{
+   border-bottom: 2px solid #693668;
+}
+
+.buttonsBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.link{
+    display: flex;
+    text-decoration: none;
+    width: 50%;
+}
+
+.buttons{
+    display: flex;
+    align-content: flex-end;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 90%;
+    padding: 5px 10px 5px 10px;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid #693668;
+    color: #5a5a6e;
+}
+
+.buttons:hover{
+    cursor:pointer;
+    transition: all 0.3s;
+    background: #77FC2994;
+    border: 2px solid #77FC2994;
+    color: #693668;
+}
