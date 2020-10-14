@@ -67,6 +67,7 @@ class Counter extends React.Component {
             <BrowserRouter>
                 <Route exacth path="/Counters" component={Counter}>
                     <div className="counter">
+                        <h1>Counters</h1>
                         <Link to="/home" className="links">
                             <button className="buttonsBack">Back</button>
                         </Link>
